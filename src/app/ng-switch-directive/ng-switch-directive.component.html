@@ -1,0 +1,24 @@
+
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'grey'">
+        <p>You have selected grey color</p>
+    </div>
+    
+    <div *ngSwitchCase="'red'">
+        <p>You have selected red color</p>
+    </div>
+
+    <div *ngSwitchCase="'blue'">
+        <p>You have selected blue color</p>
+    </div>
+
+    <div *ngSwitchCase="'green'">
+        <p>You have selected green color</p>
+    </div>
+
+    <!-- This is the default case -->
+    <div *ngSwitchDefault>
+        <p>This is the default case</p>
+    </div>
+</div>

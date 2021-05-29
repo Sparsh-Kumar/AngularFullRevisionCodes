@@ -1,0 +1,18 @@
+
+
+<!-- We have seen how Data Binding works [that is the flow of information or data from angular class or Component to the HTML template attached to it] -->
+<!-- We have also seen how Event Binding Works [that is the flow of information from the HTML template into the angular class or Component attached to it.] -->
+
+<!-- IMPORTANT NOTE - Two way Binding allows us to update a value and display the value at the same time -->
+<!-- In order to implement Two way binding, angular gives us another directive named [ngModel] directive -->
+
+<!-- What we trying to achieve here is a view and a model should always be in sync -->
+<!-- Here as we can see in [(ngModel)] directive, [] for data binding and () for event binding, both are used so this is Two way binding -->
+
+
+<!-- In order to make use of Two way binding using [(ngModel)] directive, you would have to import "Forms" Module,
+    otherwise it will throw an error -->
+<br>
+<br>
+<input [(ngModel)]="two_way_binding" type="text">
+<p>The value of two way binding is {{two_way_binding}}</p>

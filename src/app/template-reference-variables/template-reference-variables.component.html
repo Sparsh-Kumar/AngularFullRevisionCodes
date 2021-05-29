@@ -1,0 +1,10 @@
+
+
+
+<!-- This is an example that depicts how we can make use of template reference variables to get the value of an element -->
+<!-- Template reference variables are just used to denote that this variable represents this element in DOM (Document Object Model) -->
+<!-- The reference variable can be used to refer to a DOM (Document Object Model) element and all of its DOM properties -->
+<!-- The way we make reference variables is making use of #variableName -->
+
+<input #myrefVariable type="text">
+<button (click)="logMessage (myrefVariable)">Log Message</button>

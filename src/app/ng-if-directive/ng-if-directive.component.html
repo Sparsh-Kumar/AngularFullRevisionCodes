@@ -1,0 +1,17 @@
+
+<!-- just assigning "true" or "false" to display a value -->
+<p *ngIf="shouldDisplay">ng-if-directive works!</p> <!-- This is the first syntax of *ngIf Structural Directive-->
+
+
+<!-- This is an example of making use of else block in Structural directive *ngIf -->
+
+<div *ngIf="shouldDisplay; then thenBlock; else elseBlock;"></div> <!-- This is the second Syntax of *ngIf Structural Directive-->
+
+<!-- ng-template is just a container for HTML that angular provides that we can render conditionally -->
+<ng-template #thenBlock>
+    <p>This is the then Block of *ngIf Structural Directive</p>
+</ng-template>
+
+<ng-template #elseBlock>
+    <p>This is the else Block of *ngIf Structural Directive</p>
+</ng-template>
