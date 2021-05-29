@@ -1,1 +1,6 @@
-<p>event-binding works!</p>
+
+
+<div>
+    <button (click)="HandleClick ($event)">ClickEvent</button> <!-- We can optionally pass the $event parameter in the event Handler function, that gives all the information about the event that has been raised -->
+    {{greeting}}
+</div>
