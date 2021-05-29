@@ -1,0 +1,46 @@
+
+
+
+1. Angular is a framework to build client side applications
+
+2. The Angular framework is great for building Single Page Applications. 
+(where parts of views gets refreshed asynchrnously without reloading the whole page)
+
+3. Why Angular
+
+    a. Angular promotes modular approach, therefore the application you build would have the clear structure.
+    b. Re-Usable code (due to the making of components)
+    c. Make development quicker and easier
+    d. Unit testable and easily maintainable code
+    e. Angular make use of Typescript language from Microsoft and maintained by Google
+
+4. Semantic Versioning
+
+1. Version MajorVersionNumber.MinorVersionNumber.PatchNumber (fix) For Example Version 1.2.3
+2. PatchNumber is increased whenever there is a bug fix
+3. MinorVersionNumber is increased whenever we introduced the features that do not break functionality
+4. MajorVersionNumber is increase whenever we introduced the features that can break the functionality
+
+5. Check Angular version using "ng --version" command
+6. Create New Angular application using the command "ng new name-of-your-app"
+
+7. An angular application is just a collection of many individual modules
+    a. Every module represents a feature area in your application
+    b. For Example we can have a users module and we can have an admin module
+    c. But at the end of the day, A module is just a lines of code, that can be imported and exported
+    d. Every angular application has at least 1 module , which is known as "Root Module", or by convention known as "App Module"
+    See figure "AngularApplicationAndModules.png"
+
+8. Each module made up of components and services see figure "ComponentAndServices.png"
+    a. A component controls the portion of the view inside your browser
+    for example you can have a component for "navigation", one for "sidebar"
+    see figure "ComponentsInAngular.png"
+    b. Each Angular application has at least 1 component known as "Root Component", or by convention known as "App Component"
+    c. All other components that we will make will be nested inside this "AppComponent" or "RootComponent" see figure "NestedComponents.png"
+    d. Each Component has a HTML view and a class to control the logic of the view of the component.
+
+9. Component also has some metadata attached to it, in the form of the decorator
+    A decorator is just a function that helps in understanding the angular weather the class is a "regular class" or "angular component"
+    A decorator for informing that a class is an angular component is @Component
+
+10. Generate a new component using "ng g c component-name"

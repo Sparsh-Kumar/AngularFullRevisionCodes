@@ -1,0 +1,40 @@
+
+<!-- 
+
+    In order to learn about property binding in Angular
+    One must understand that Attributes and Properties of an element are not the same
+    For example
+
+    If you make an input box like this
+    <input type="text" value="sparsh">
+    and then open the browser inspect tools and after focusing on the input element type
+    
+    "$0.getAttribute ('value')" will print "sparsh"
+    "$0.value" will also print "sparsh"
+    but when you change the text inside the input element and again go into the console after focusing on the input element you would
+    see
+
+    "$0.getAttribute ('value')" will print "sparsh"
+    but "$0.value" will print the current value that you have typed
+
+    Therefore it is evident that Attributes and Properties are not same
+
+    1. Attributes are defined by HTML elements.
+    2. Properties are defined by DOM (Document Object Model)
+    3. Attributes initialize Properties during DOM loading and after that they are done, you cannot change the Attribute value.
+    4. However Properties value can change but they are initialized by attributes during DOM loading.
+
+    IMPORTANT NOTE - In Angular The Property Binding is applied on the DOM properties and not on the HTML Attributes.
+-->
+<input [id]="myId" type="text">
+
+<!-- 
+    IMPORTANT NOTE- We should not make use of interpolation to do property binding, because Interpolation is only applicable 
+    to "String" values and not "Boolean" values
+    and there are certain DOM properties that are boolean in nature, so Interpolation cannot work with them, so In order to 
+    work with them we have to make use of Property binding using this Syntax in Angular,
+    so If we have to do Property Binding we should always make use of "[]" this syntax that is given below.
+-->
+
+
+<input type="text" [disabled]="isDisabled">

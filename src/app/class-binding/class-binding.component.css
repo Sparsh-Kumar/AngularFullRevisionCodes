@@ -1,0 +1,21 @@
+
+
+.text-success {
+    color: brown;
+}
+
+.text-failure {
+    color: darkslateblue;
+}
+
+.text-neutral {
+    color: darkturquoise;
+}
+
+.text-special {
+    font-style: italic;
+}
+
+.text-warning {
+    font-size: large;
+}

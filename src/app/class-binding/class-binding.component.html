@@ -1,0 +1,9 @@
+
+
+<p [class]="myClass">This is an example of class Binding</p>
+
+<!-- This method is useful if you conditionally apply single class -->
+<p [class.text-success]="!hasError">This is an example of applying a class using expression true or false</p> 
+
+<!-- If you need to conditionally apply multiple classes then use the [ngClass] directive -->
+<p [ngClass]="multipleClassesConditionally">This is an example of applying multiple classes using [ngClass] directive conditionally</p>

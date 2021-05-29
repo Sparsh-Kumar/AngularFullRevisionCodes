@@ -1,0 +1,12 @@
+<div>
+    <p>Welcome {{name}}</p>
+    <p>{{2 + 2}}</p> <!-- Angular evaluates the expression and display the result -->
+    <p>{{'My name is ' + 'sparsh Kumar'}}</p> <!-- Angular is also able to concatenate the strings and display the result -->
+    <p>{{name.length}}</p> <!-- Angular can also evaluate javascript properties and methods -->
+    <p>{{name.toUpperCase ()}}</p> <!-- Angular can also evaluate javascript methods -->
+    <p>{{MyCustomFunction ()}}</p> <!-- Angular can also evaluate your custom functions defined in the component.ts file -->
+    <!-- <p>{{a = 2 + 2}}</p> [you cannot assign the result of an expression into the variable using interpolation] [this statement will throw an error] -->
+    <!-- <p>{{window.location.href}}</p> [you cannot also get the value of global javascript variables using interpolation] -->
+    <!-- However you can make use of a variable to store the result of "window.location.href" inside "component.ts" file and then display it-->
+    <p>{{currentURL}}</p>
+</div>

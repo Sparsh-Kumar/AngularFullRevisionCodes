@@ -1,0 +1,11 @@
+
+
+<!-- The method given below can be used to apply individual properties dynamically -->
+<p [style.color]="successColor">This is an example of using style binding</p>
+
+<!-- Conditionally apply dynamic value for a particular style property -->
+<p [style.color]="hasError ? successColor: failureColor">This is an example of using individual style binding using a condition </p>
+
+
+<!-- You can apply multiple styles at once using [ngStyle] directive in angular -->
+<p [ngStyle]="stylesObject">This is an example of using individual style binding using a condition </p>
