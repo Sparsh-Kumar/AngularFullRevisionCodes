@@ -1,0 +1,34 @@
+
+
+<div>
+
+    <!-- The given below are string pipes -->
+    <p>{{name | lowercase}}</p>
+    <p>{{name | uppercase}}</p>
+    <p>{{name | titlecase}}</p>
+    <p>{{name | slice:2}}</p>
+    <p>{{name | slice:2:5}}</p>
+    <p>{{jsonData | json }}</p>
+
+    <!-- The given below are number pipes -->
+    <p>{{5.678 | number: '1.2-3'}}</p> <!-- in string value after "number:" is 'max-digit-of-whole-number-part.min-digit-after-decimal-max-digit-after-decimal' -->
+    <p>{{5.678 | number: '3.2-2'}}</p>
+
+    <!-- Some other are percent and currency pipes -->
+    <p>{{0.25 | percent}}</p>
+    <p>{{25 | currency}}</p> <!-- By default currency is USD -->
+    <p>{{25 | currency: 'EUR'}}</p> <!-- you can change currency using this second argument where you specify the "Currency Code" -->
+
+    <!-- Given below are some date pipes [THESE ARE IMPORTANT FOR TIME REPRESENTATION] -->
+    <p>{{myDate | date: 'short'}}</p>
+    <p>{{myDate | date: 'shortDate'}}</p>
+    <p>{{myDate | date: 'shortTime'}}</p>
+
+    <p>{{myDate | date: 'medium'}}</p>
+    <p>{{myDate | date: 'mediumDate'}}</p>
+    <p>{{myDate | date: 'mediumTime'}}</p>
+
+    <p>{{myDate | date: 'long'}}</p>
+    <p>{{myDate | date: 'longDate'}}</p>
+    <p>{{myDate | date: 'longTime'}}</p>
+</div>
