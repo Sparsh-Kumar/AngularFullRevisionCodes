@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'generate-components';
+  public name = 'Sparsh Nishkarsh'
+  public title = 'generate-components';
+
+  displayChildEvent (event: any) {
+    this.title = event;
+  }
+
 }

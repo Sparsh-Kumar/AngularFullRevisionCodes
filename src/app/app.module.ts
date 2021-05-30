@@ -12,6 +12,9 @@ import { TemplateReferenceVariablesComponent } from './template-reference-variab
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
+import { NgForDirectiveComponent } from './ng-for-directive/ng-for-directive.component';
+import { ComponentInteractionFromParentToChildComponent } from './component-interaction-from-parent-to-child/component-interaction-from-parent-to-child.component';
+import { ComponentInteractionFromChildToParentComponent } from './component-interaction-from-child-to-parent/component-interaction-from-child-to-parent.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-dire
     TemplateReferenceVariablesComponent,
     TwoWayBindingComponent,
     NgIfDirectiveComponent,
-    NgSwitchDirectiveComponent
+    NgSwitchDirectiveComponent,
+    NgForDirectiveComponent,
+    ComponentInteractionFromParentToChildComponent,
+    ComponentInteractionFromChildToParentComponent
   ],
   imports: [
     BrowserModule,

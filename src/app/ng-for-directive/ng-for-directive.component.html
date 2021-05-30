@@ -1,0 +1,30 @@
+
+<!-- This is an example of iterating over the array -->
+<div *ngFor="let color of colors">
+    <p>The color value is {{color}}</p>
+</div>
+
+<!-- If we also need to consider indexes along with it then -->
+<div *ngFor="let color of colors;index as i">
+    <p>Index = {{i}}, color = {{color}}</p>
+</div>
+
+<!-- If we need to check which element is last -->
+<div *ngFor="let color of colors;last as l">
+    <p>isLast = {{l}}, color = {{color}}</p>
+</div>
+
+<!-- If we need to check which element is last -->
+<div *ngFor="let color of colors;first as f">
+    <p>isFirst = {{f}}, color = {{color}}</p>
+</div>
+
+<!-- If we need to check which element is odd -->
+<div *ngFor="let color of colors;odd as o">
+    <p>isOdd = {{o}}, color = {{color}}</p>
+</div>
+
+<!-- If we need to check which element is even -->
+<div *ngFor="let color of colors;even as e">
+    <p>isEven = {{e}}, color = {{color}}</p>
+</div>

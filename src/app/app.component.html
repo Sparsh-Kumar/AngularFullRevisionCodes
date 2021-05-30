@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-      <h2>App Component</h2>
+      <h2>{{title}}</h2>
       <app-interpolation></app-interpolation> <!-- As all the child component of a module will be nested inside the "Root Component" or "App Component" of that module-->
       <app-property-binding></app-property-binding> <!-- As all the child component of a module will be nested inside the "Root Component" or "App Component" of that module-->
       <app-class-binding></app-class-binding> <!-- As all the child component of a module will be nested inside the "Root Component" or "App Component" of that module-->
@@ -15,5 +15,8 @@
       <app-two-way-binding></app-two-way-binding> <!-- As all the child component of a module will be nested inside the "Root Component" or "App Component" of that module-->
       <app-ng-if-directive></app-ng-if-directive> <!-- As all the child component of a module will be nested inside the "Root Component" or "App Component" of that module-->
       <app-ng-switch-directive></app-ng-switch-directive> <!-- As all the child component of a module will be nested inside the "Root Component" or "App Component" of that module-->
+      <app-ng-for-directive></app-ng-for-directive> <!-- As all the child component of a module will be nested inside the "Root Component" or "App Component" of that module-->
+      <app-component-interaction-from-parent-to-child [passedName]="name"></app-component-interaction-from-parent-to-child> <!-- As all the child component of a module will be nested inside the "Root Component" or "App Component" of that module-->
+      <app-component-interaction-from-child-to-parent (childEvent)="displayChildEvent ($event)"></app-component-interaction-from-child-to-parent> <!-- As all the child component of a module will be nested inside the "Root Component" or "App Component" of that module-->
     </body>
   </html>
