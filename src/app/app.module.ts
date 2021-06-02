@@ -16,7 +16,13 @@ import { NgForDirectiveComponent } from './ng-for-directive/ng-for-directive.com
 import { ComponentInteractionFromParentToChildComponent } from './component-interaction-from-parent-to-child/component-interaction-from-parent-to-child.component';
 import { ComponentInteractionFromChildToParentComponent } from './component-interaction-from-child-to-parent/component-interaction-from-child-to-parent.component';
 import { PipesComponent } from './pipes/pipes.component';
-
+import { ServicesAndHttpComponent } from './services-and-http/services-and-http.component';
+import { TestServiceService } from './test-service.service';
+import { HttpAndObservablesComponent } from './http-and-observables/http-and-observables.component';
+import { HttpAndObservablesService } from './http-and-observables.service'; 
+import { HttpClientModule } from '@angular/common/http';
+import { ErrorHandlingComponent } from './error-handling/error-handling.component'; // this module is very necessary for making requests to an api endpoint using angular 
+// remember here you have to import "HttpClientModule" and in service you have to import "HttpClient"
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,13 +38,20 @@ import { PipesComponent } from './pipes/pipes.component';
     NgForDirectiveComponent,
     ComponentInteractionFromParentToChildComponent,
     ComponentInteractionFromChildToParentComponent,
-    PipesComponent
+    PipesComponent,
+    ServicesAndHttpComponent,
+    HttpAndObservablesComponent,
+    ErrorHandlingComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    TestServiceService,
+    HttpAndObservablesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

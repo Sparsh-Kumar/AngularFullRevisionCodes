@@ -1,0 +1,17 @@
+
+<!-- 
+    I recommend you to first go into the Angular introduction folder and see the images in Folders named 
+    "Services" and "DependencyInjection"
+ -->
+
+ <!-- 
+    Steps to create a Service
+    1. Create a service using angular cli "ng c s service-name"
+    2. Register the service with angular @Injector on module level so that all the components can make use of the service data.
+    3. Declare the service as a Dependency in the constructor of components that needed it.
+-->
+
+<p>services-and-http works!</p>
+<div *ngFor="let test of testData">
+    <p>The test value is {{test | json}}</p>
+</div>
