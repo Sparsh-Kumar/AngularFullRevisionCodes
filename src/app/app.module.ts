@@ -21,7 +21,11 @@ import { TestServiceService } from './test-service.service';
 import { HttpAndObservablesComponent } from './http-and-observables/http-and-observables.component';
 import { HttpAndObservablesService } from './http-and-observables.service'; 
 import { HttpClientModule } from '@angular/common/http';
-import { ErrorHandlingComponent } from './error-handling/error-handling.component'; // this module is very necessary for making requests to an api endpoint using angular 
+import { ErrorHandlingComponent } from './error-handling/error-handling.component';
+import { InputParentComponent } from './input-parent/input-parent.component';
+import { InputChildComponent } from './input-child/input-child.component';
+import { OutputChildComponent } from './output-child/output-child.component';
+import { OutputParentComponent } from './output-parent/output-parent.component'; // this module is very necessary for making requests to an api endpoint using angular 
 // remember here you have to import "HttpClientModule" and in service you have to import "HttpClient"
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { ErrorHandlingComponent } from './error-handling/error-handling.componen
     PipesComponent,
     ServicesAndHttpComponent,
     HttpAndObservablesComponent,
-    ErrorHandlingComponent
+    ErrorHandlingComponent,
+    InputParentComponent,
+    InputChildComponent,
+    OutputChildComponent,
+    OutputParentComponent
   ],
   imports: [
     BrowserModule,

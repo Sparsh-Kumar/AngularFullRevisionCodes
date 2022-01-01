@@ -1,0 +1,8 @@
+
+<div>
+    <p>Parent Output Component Works!</p>
+    <div *ngFor="let value of DataLst">
+        <p>Data is {{value}}</p>
+    </div>
+    <app-output-child (requestInfo)="requestInfoOfParent($event)"></app-output-child>
+</div>
